@@ -12,33 +12,33 @@ This project recreates a Figma design specification for a featured books showcas
 ## ✨ Features Implemented
 
 ### 🎨 Visual Design
-- **Responsive Grid Layout**: 2 columns on desktop/tablet, 1 column on mobile, 3 columns on TV/large displays
-- **Card-Based Interface**: Horizontal layout with image placeholder, content area, and call-to-action button
-- **Consistent Card Heights**: Equal-height cards across all grid layouts with proper content distribution
-- **Smooth Hover Effects**: Card elevation, shimmer animations, and button ripple effects
-- **Modern Typography**: Inter font family with multiple weights for visual hierarchy
+- **Responsive Grid Layout**: 2 columns on desktop/tablet, 1 column on mobile, 3 columns on TV/large displays.
+- **Card-Based Interface**: Horizontal layout with image placeholder, content area, and call-to-action button.
+- **Consistent Card Heights**: Equal-height cards across all grid layouts with proper content distribution.
+- **Smooth Hover Effects**: Card elevation, shimmer animations, and button ripple effects.
+- **Modern Typography**: Google sans font family with multiple weights for visual hierarchy.
 
 ### 🔧 Technical Implementation
-- **SASS/SCSS**: Modular CSS with variables given its raw html and not a framework, mixins, and nested selectors
-- **BEM Methodology**: Block Element Modifier naming convention for maintainable and reusable components
-- **Local Font Hosting**: Self-hosted Inter webfonts for improved performance and privacy
-- **Mobile-First Design**: Progressive enhancement approach from mobile to desktop
-- **Semantic HTML**: Proper use of semantic elements and ARIA attributes for accessibility
-- **Advanced Grid Management**: CSS Grid with grid-auto-rows: 1fr for consistent card heights
-- **Smart Text Handling**: Overflow protection and hyphenation for long content
+- **SASS/SCSS**: Modular CSS with variables given its raw html and not a framework, mixins, and nested selectors.
+- **BEM Methodology**: Block Element Modifier naming convention for maintainable and reusable components.
+- **Local Font Hosting**: Self-hosted Google sans webfonts for improved performance and privacy.
+- **Mobile-First Design**: Progressive enhancement approach from mobile to desktop.
+- **Semantic HTML**: Proper use of semantic elements and ARIA attributes for accessibility.
+- **Advanced Grid Management**: CSS Grid with grid-auto-rows: 1fr for consistent card heights.
+- **Smart Text Handling**: Overflow protection and hyphenation for long content.
 
 ## 📋 Requirements Checklist
 
 All specified requirements have been successfully implemented:
 
-- ✅ **Figma Recreation**: Pixel-perfect implementation using HTML/CSS/SASS without frameworks
-- ✅ **Responsive Design**: Mobile-first approach with smooth breakpoint transitions
-- ✅ **80rem Max Width**: Container properly constrained with rem units throughout
-- ✅ **Local Webfonts**: Inter font hosted locally (no external CDN dependencies)
-- ✅ **Creative Hover States**: Custom card and button animations with smooth transitions
-- ✅ **Clickable Cards**: Full card interactivity with proper accessibility support
-- ✅ **BEM Methodology**: Consistent naming convention for scalable component architecture
-- ✅ **Cross-Device Compatibility**: Optimized layouts for mobile, tablet, desktop, and TV screens
+- ✅ **Figma Recreation**: Pixel-perfect implementation using HTML/CSS/SASS without frameworks.
+- ✅ **Responsive Design**: Mobile-first approach with smooth breakpoint transitions.
+- ✅ **80rem Max Width**: Container properly constrained with rem units throughout.
+- ✅ **Local Webfonts**: Google sans font hosted locally (no external CDN dependencies).
+- ✅ **Creative Hover States**: Custom card and button animations with smooth transitions.
+- ✅ **Clickable Cards**: Full card interactivity with proper accessibility support.
+- ✅ **BEM Methodology**: Consistent naming convention for scalable component architecture.
+- ✅ **Cross-Device Compatibility**: Optimized layouts for mobile, tablet, desktop, and TV screens.
 
 ## 📁 File Structure
 - featured-books/
@@ -47,7 +47,7 @@ All specified requirements have been successfully implemented:
 - │   ├── 📄 styles.css          # Compiled CSS output // this is been used
 - │   └── 📄 styles.scss         # Source SCSS file with variables and mixins // not been used
 - ├── 📁 fonts/
-- │   └── 📄 inter.css           # Local Inter font definitions
+- │   └── 📄 font.css           # Local Google Sans font definitions
 - ├── 📁 assets/                 # Project assets (recommended)
 - │   ├── 📄 favicon.ico         # Site favicon
 - │   └── 📄 preview.png         # Project screenshot
@@ -68,12 +68,12 @@ All specified requirements have been successfully implemented:
     git clone https://github.com/ayomideesam/featured-books.git
     cd featured-books
 2. **Set up local fonts**
-    The Inter font files should be downloaded and placed in the /fonts/ directory:
+    The Google Sans font files should be downloaded and placed in the /fonts/ directory:
 
     Use Google Webfonts Helper
     Select charsets: latin
     Select styles: 400, 500, 600, 700
-    Place downloaded files alongside inter.css
+    Place downloaded files alongside font.css
 
 ## 🎨 Design Specifications
 
@@ -106,11 +106,11 @@ All specified requirements have been successfully implemented:
     $desktop: 62rem;           // 992px - Increased spacing and sizing
     $large: 75rem;             // 1200px - Maximum optimized layout
     $xl: 87.5rem;              // 1400px - Extra large displays
-    $ultra: 115rem and above;  // 1600px - Ultra-wide displays, screens with 3-column layout
+    $ultra: 115rem and above;  // 1900px - Ultra-wide displays, screens with 3-column layout
 
 ### 🎨 Color Palette
     // Primary Colors
-    $primary-blue: #3b82f6;        // Button background
+    $primary-blue: #2449BF;        // Button background
     $primary-blue-hover: #2563eb;  // Button hover state
 
     // Text Colors  
@@ -134,14 +134,6 @@ All specified requirements have been successfully implemented:
     Descriptions: 0.875rem - 0.9375rem
     Button Text: 0.875rem
     Font Weights: 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
-
-### 📱 Responsive Breakpoints
-    // Mobile First Approach
-    $mobile: 20rem;      // 320px - Small mobile adjustments
-    $tablet: 48rem;      // 768px - Switch to 2-column grid
-    $desktop: 62rem;     // 992px - Increased spacing and sizing
-    $large: 75rem;       // 1200px - Maximum optimized layout
-    $xl: 87.5rem;        // 1400px - Extra large displays
 
 ## ⚡ Performance Optimizations
 

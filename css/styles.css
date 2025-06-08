@@ -99,7 +99,7 @@ html {
 
 body {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
+  line-height: 1.25;
   color: var(--color-text-body);
   background-color: var(--color-bg-page);
 }

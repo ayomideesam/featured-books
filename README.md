@@ -11,8 +11,9 @@ This project recreates a Figma design specification for a featured books showcas
 ## ✨ Features Implemented
 
 ### 🎨 Visual Design
-- **Responsive Grid Layout**: 2 columns on desktop/tablet, 1 column on mobile
+- **Responsive Grid Layout**: 2 columns on desktop/tablet, 1 column on mobile, 3 columns on TV/large displays
 - **Card-Based Interface**: Horizontal layout with image placeholder, content area, and call-to-action button
+- **Consistent Card Heights**: Equal-height cards across all grid layouts with proper content distribution
 - **Smooth Hover Effects**: Card elevation, shimmer animations, and button ripple effects
 - **Modern Typography**: Inter font family with multiple weights for visual hierarchy
 
@@ -22,6 +23,8 @@ This project recreates a Figma design specification for a featured books showcas
 - **Local Font Hosting**: Self-hosted Inter webfonts for improved performance and privacy
 - **Mobile-First Design**: Progressive enhancement approach from mobile to desktop
 - **Semantic HTML**: Proper use of semantic elements and ARIA attributes for accessibility
+- **Advanced Grid Management**: CSS Grid with grid-auto-rows: 1fr for consistent card heights
+- **Smart Text Handling**: Overflow protection and hyphenation for long content
 
 ## 📋 Requirements Checklist
 
@@ -34,20 +37,21 @@ All specified requirements have been successfully implemented:
 - ✅ **Creative Hover States**: Custom card and button animations with smooth transitions
 - ✅ **Clickable Cards**: Full card interactivity with proper accessibility support
 - ✅ **BEM Methodology**: Consistent naming convention for scalable component architecture
+- ✅ **Cross-Device Compatibility**: Optimized layouts for mobile, tablet, desktop, and TV screens
 
 ## 📁 File Structure
-featured-books/
-├── 📄 index.html              # Main HTML document
-├── 📁 css/
-│   ├── 📄 styles.css          # Compiled CSS output // this is been used
-│   └── 📄 styles.scss         # Source SCSS file with variables and mixins // not been used
-├── 📁 fonts/
-│   └── 📄 inter.css           # Local Inter font definitions
-├── 📁 assets/                 # Project assets (recommended)
-│   ├── 📄 favicon.ico         # Site favicon
-│   └── 📄 preview.png         # Project screenshot
-├── 📄 LICENSE                 # Project license
-└── 📄 README.md               # Project documentation
+- featured-books/
+- ├── 📄 index.html              # Main HTML document
+- ├── 📁 css/
+- │   ├── 📄 styles.css          # Compiled CSS output // this is been used
+- │   └── 📄 styles.scss         # Source SCSS file with variables and mixins // not been used
+- ├── 📁 fonts/
+- │   └── 📄 inter.css           # Local Inter font definitions
+- ├── 📁 assets/                 # Project assets (recommended)
+- │   ├── 📄 favicon.ico         # Site favicon
+- │   └── 📄 preview.png         # Project screenshot
+- ├── 📄 LICENSE                 # Project license
+- └── 📄 README.md               # Project documentation
 
 ## 🚀 Getting Started
 
@@ -72,11 +76,36 @@ featured-books/
 
 ## 🎨 Design Specifications
 
+### 🎯 What I've Implemented:
+
+#### 📱 Responsive Image Dimension Text
+
+- Mobile (default): Shows "220×150" text with 220px container width and 150px image height
+- Tablet+ (48rem+): Shows "150×220" text with 150px container width and 220px image height
+- Visual Consistency: Image dimensions perfectly match the displayed text across all breakpoints
+- Added CSS classes .card__image-text--desktop and .card__image-text--mobile for responsive text switching
+
+#### 📺 TV-Only Cards (Cards 5 & 6)
+
+- Hidden by Default: Cards 5 & 6 use .card--tv-only class and are hidden on smaller screens
+- Large Display Activation: Only appear on 90rem+ screens (TV/large display sizes)
+- Enhanced Layout: 3×2 grid layout (3 columns, 2 rows) on TV screens for optimal viewing
+
 ### 📐 Layout
 - Container: Max-width 80rem, centered with responsive padding
-- Grid System: CSS Grid with repeat(2, 1fr) on desktop, single column on mobile
-- Card Structure: Flexbox horizontal layout with image container and content area
-- Spacing: Consistent rem-based spacing that scales across breakpoints
+- Grid System: CSS Grid with repeat(3, 1fr) on Tvs or Large Monitors/Desktop, Double or 2 columns on laptops/tablets, single column on mobile.
+- Card Structure: Flexbox horizontal layout with image container and content area.
+- Spacing: Consistent rem-based spacing that scales across breakpoints.
+
+### 📱 Responsive Breakpoints
+    scss// Mobile First Approach with Enhanced Stability
+    $mobile-small: 20rem;      // 320px - Small mobile adjustments
+    $mobile-large: 36rem;      // 576px - Large mobile optimization
+    $tablet: 48rem;            // 768px - 2-column grid with enhanced card stability
+    $desktop: 62rem;           // 992px - Increased spacing and sizing
+    $large: 75rem;             // 1200px - Maximum optimized layout
+    $xl: 87.5rem;              // 1400px - Extra large displays
+    $ultra: 115rem and above;  // 1600px - Ultra-wide displays, screens with 3-column layout
 
 ### 🎨 Color Palette
     // Primary Colors

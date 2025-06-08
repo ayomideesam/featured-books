@@ -6,7 +6,7 @@
 
 This project recreates a Figma design specification for a featured books showcase, implementing a clean and modern card-based layout. The component displays books in a 2x2 grid on desktop devices and adapts to a single-column layout on mobile devices, with smooth hover animations and accessible interactions.
 
-**Live Demo**: [View Project](https://ayomideesam.github.io/featured-books)
+**Live Demo**: [View Project](https://featured-books.netlify.app/)
 
 ## ✨ Features Implemented
 

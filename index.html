@@ -6,20 +6,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Featured Books</title>
-
-    <!-- Local Webfonts (download Inter font files) -->
+    <!-- Local Webfonts (downloaded Inter font files for this assessment) -->
     <link rel="stylesheet" href="fonts/inter.css">
-
-    <!-- External Stylesheet -->
+    <!-- External CSS Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Scss styles -->
+    <!-- External Scss Stylesheet -->
     <!-- <link rel="stylesheet" href="css/styles.scss"> -->
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="assets/icon/favicon.ico">
+    <!-- <link rel="icon" type="image/png" sizes="32x32"
+        href="https://cdn-ilcnleh.nitrocdn.com/LqRJRpxExWizERpspQnrIOTkCvGIsPTW/assets/images/optimized/rev-15679cd/www.fatbeehive.com/assets/images/favicon-32x32.png"> -->
 </head>
 
 <body>
-    <main class="books">
+    <main id="main-content" class="books">
+        <h1 class="books__header">Featured Books</h1>
 
+        <div class="books__grid" role="list">
+            <!-- Card 1 -->
+            <article class="card" role="listitem" tabindex="0" aria-label="Purchase The Book Title">
+                <div class="card__image-container">
+                    <div class="card__image" aria-hidden="true">
+                        <span class="card__image-text card__image-text--desktop">150×220</span>
+                        <span class="card__image-text card__image-text--mobile">220×150</span>
+                    </div>
+                    <a href="#main-content" class="button button--primary" role="button">
+                        <span class="button__text">Buy Now</span>
+                    </a>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">The Book Title</h2>
+                    <p class="card__description">
+                        A short description of the book. This is engaging and concise.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card" role="listitem" tabindex="0" aria-label="Purchase Another Book">
+                <div class="card__image-container">
+                    <div class="card__image" aria-hidden="true">
+                        <span class="card__image-text card__image-text--desktop">150×220</span>
+                        <span class="card__image-text card__image-text--mobile">220×150</span>
+                    </div>
+                    <a href="#main-content" class="button button--primary" role="button">
+                        <span class="button__text">Buy Now</span>
+                    </a>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Another Book</h2>
+                    <p class="card__description">This book is a must-read. Learn more about it here.</p>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card" role="listitem" tabindex="0" aria-label="Purchase Interesting Read">
+                <div class="card__image-container">
+                    <div class="card__image" aria-hidden="true">
+                        <span class="card__image-text card__image-text--desktop">150×220</span>
+                        <span class="card__image-text card__image-text--mobile">220×150</span>
+                    </div>
+                    <a href="#main-content" class="button button--primary" role="button">
+                        <span class="button__text">Buy Now</span>
+                    </a>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Interesting Read</h2>
+                    <p class="card__description">An intriguing tale that keeps you turning the pages.</p>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card" role="listitem" tabindex="0" aria-label="Purchase Last Book">
+                <div class="card__image-container">
+                    <div class="card__image" aria-hidden="true">
+                        <span class="card__image-text card__image-text--desktop">150×220</span>
+                        <span class="card__image-text card__image-text--mobile">220×150</span>
+                    </div>
+                    <a href="#main-content" class="button button--primary" role="button">
+                        <span class="button__text">Buy Now</span>
+                    </a>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Last Book</h2>
+                    <p class="card__description">Final book in the showcase. Check out what it offers.</p>
+                </div>
+            </article>
+
+            <!-- Card 5 - TV/Large Screens Only -->
+            <article class="card card--tv-only" role="listitem" tabindex="0" aria-label="Purchase Epic Adventure">
+                <div class="card__image-container">
+                    <div class="card__image" aria-hidden="true">
+                        <span class="card__image-text card__image-text--desktop">150×220</span>
+                        <span class="card__image-text card__image-text--mobile">220×150</span>
+                    </div>
+                    <a href="#main-content" class="button button--primary" role="button">
+                        <span class="button__text">Buy Now</span>
+                    </a>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Epic Adventure</h2>
+                    <p class="card__description">An extraordinary journey awaits in this captivating novel.</p>
+                </div>
+            </article>
+
+            <!-- Card 6 - TV/Large Screens Only -->
+            <article class="card card--tv-only" role="listitem" tabindex="0" aria-label="Purchase Final Chapter">
+                <div class="card__image-container">
+                    <div class="card__image" aria-hidden="true">
+                        <span class="card__image-text card__image-text--desktop">150×220</span>
+                        <span class="card__image-text card__image-text--mobile">220×150</span>
+                    </div>
+                    <a href="#main-content" class="button button--primary" role="button">
+                        <span class="button__text">Buy Now</span>
+                    </a>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Final Chapter</h2>
+                    <p class="card__description">The ultimate conclusion to an unforgettable series.</p>
+                </div>
+            </article>
+        </div>
     </main>
 </body>
 

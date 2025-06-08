@@ -1,6 +1,7 @@
 # Featured Books
 
 > **Fat Bee-Hive Technical Assessment** - Implementation of a responsive featured books UI component using HTML, CSS/SCSS, and BEM methodology.
+> **Submitted by:** IRU0BE AKHIGBE AYOMIDE
 
 ## 🎯 Project Overview
 

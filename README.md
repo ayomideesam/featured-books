@@ -18,7 +18,7 @@ This project recreates a Figma design specification for a featured books showcas
 - **Modern Typography**: Inter font family with multiple weights for visual hierarchy
 
 ### 🔧 Technical Implementation
-- **SASS/SCSS**: Modular CSS with variables, mixins, and nested selectors
+- **SASS/SCSS**: Modular CSS with variables given its raw html and not a framework, mixins, and nested selectors
 - **BEM Methodology**: Block Element Modifier naming convention for maintainable and reusable components
 - **Local Font Hosting**: Self-hosted Inter webfonts for improved performance and privacy
 - **Mobile-First Design**: Progressive enhancement approach from mobile to desktop
